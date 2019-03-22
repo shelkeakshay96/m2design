@@ -20,4 +20,8 @@
 	.page-main {
 	    padding : 0px !important;
 	}
+
+	.logo {
+		margin: -20px auto 0px 0 !important;
+	}
 }
