@@ -1,0 +1,23 @@
+@media (min-width: 768px), print{
+	.header.content {
+	    padding: 10px 20px 0 !important;
+	}
+
+	.page-header .header.panel {
+	    padding-bottom: 5px !important;
+	    padding-top: 5px !important;
+	}
+
+	.page-header .panel.wrapper {
+	    border-bottom: none !important; 
+	}
+
+	.nav-sections {
+	    margin-bottom: 0px !important;
+	    background: #f5f5f5 !important;
+	}
+
+	.page-main {
+	    padding : 0px !important;
+	}
+}

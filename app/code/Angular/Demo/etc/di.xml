@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Kaytalyst Technogies
+ * Copyright © 2018 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+	<!-- Forgot Password Api -->
+    <!-- <preference for="Angular\Demo\Api\CustomerInterface" 	
+    	type="Fal\Api\Model\Api\Customer" /> -->
+</config>

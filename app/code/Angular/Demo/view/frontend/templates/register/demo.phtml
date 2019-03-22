@@ -1,0 +1,97 @@
+<?php
+	$helper = $block->getCookieHelper();
+	// echo $helper->getCookie('m2cookie_fname'); die;
+?>
+<style type="text/css">
+/*main #regForm {
+    padding: 2%;
+    padding-bottom: 4%;
+    height: auto;
+}
+.formArea {
+	width: 61%;
+    float: right;
+}
+
+.formField {
+	margin-top: 2%;
+}
+
+.btnCenter {
+	text-align: center;
+	margin-top: 3%;
+}
+
+.formImage img {
+	margin-top: 2%;
+	padding-left: 2%;
+    width: 35%;
+}
+
+.required {
+    color: red;
+}
+
+@media all and (max-width:768px){
+	.required {
+	    color: blue;
+	}
+}*/
+</style>
+<main>
+    <form id="regForm" name="regForm" method="post" action="save" data-mage-init='{"validation":{}}'>
+    	
+		<div class="formArea">
+	    	<div class="input-box formField	">
+	    		<span class="required">*</span>
+	    		<label for="fname"><?php echo __('First name'); ?></label>
+	         	<input name="fname" id="fname" title="First Name" value="<?= $helper->getCookie('m2cookie_fname') ?>" class="required-entry" type="text" />
+	        </div>
+
+	        <div class="input-box formField">
+	    		<span class="required">*</span>
+	    		<label><?php echo __('Last name'); ?></label>
+	         	<input name="lname" id="lname" title="Last Name" value="<?= $helper->getCookie('m2cookie_lname') ?>" class="required-entry" type="text" />
+	        </div>
+
+	        <div class="input-box formField">
+	    		<span class="required">*</span>
+	    		<label><?php echo __('Email'); ?></label>
+	         	<input name="email" id="email" title="Email" value="<?= $helper->getCookie('m2cookie_email') ?>" class="required-entry validate-email" type="email" />
+	        </div>
+
+	        <div class="input-box formField">
+	    		<span class="required">*</span>
+	    		<label><?php echo __('Mobile'); ?></label>
+	         	<input name="mobile" id="mobile" title="Mobile" value="<?= $helper->getCookie('m2cookie_mobile') ?>" class="required-entry validate-length maximum-length-10 minimum-length-10 validate-digits" type="text" />
+	        </div>
+
+	        <div class="input-box formField">
+	    		<span class="required">*</span>
+	    		<label><?php echo __('Address'); ?></label>
+	    		<textarea rows="4" cols="50" name="address" id="address" title="Address" class="required-entry" type="text"><?= $helper->getCookie('m2cookie_address') ?></textarea>
+	        </div>
+
+			<div class="input-box formField">
+				<span class="required">*</span>
+				<label for="city">City</label>
+				<select id="city" name="city" class="required-entry">
+					<option>--Select--</option>
+					<option value="pune" <?= ($helper->getCookie('m2cookie_city') == 'pune') ? 'selected' : ''  ?>>Pune</option>
+					<option value="satara" <?= ($helper->getCookie('m2cookie_city') == 'satara') ? 'selected' : ''  ?>>Satara</option>
+					<option value="mumbai" <?= ($helper->getCookie('m2cookie_city') == 'mumbai') ? 'selected' : ''  ?>>Mumbai</option>
+					<option value="kolhapur" <?= ($helper->getCookie('m2cookie_city') == 'kolhapur') ? 'selected' : ''  ?>>Kolhapur</option>
+				</select>
+			</div>
+
+			<div class="formField btnCenter">
+				<button type="submit" id="btnSubmit" class="action primary">Submit</button>
+			</div>
+		</div>
+		<div class="formImage">
+			<img src="http://192.168.2.104/angularm2/pub/media/Lock-icon.png" alt="login" class="">
+		</div>
+		
+	</form>
+
+</main>

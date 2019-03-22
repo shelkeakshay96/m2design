@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../vendor/magento/framework/Module/etc/module.xsd">
+  	<head>
+	    <css src="Katalyst_Home::css/custom_home.css" />
+
+	    <css src="Magento_Theme::css/bootstrap.css"/>
+	    <css src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" src_type="url" />
+	    <!--Include CDN-->
+        <script src="Magento_Theme::js/jquery.min.js" /> 
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" src_type="url" />
+        
+        <link src="http://fonts.googleapis.com/css?family=Montserrat" src_type="url" /> 
+		<script src="Katalyst_Home::js/custom_home.js"/> 
+
+	    <!-- <css src="css/custom_home_l.css.css" media="screen and (min-width: 768px)"/> -->
+  	</head>
+</page>
