@@ -1,4 +1,4 @@
-require(['jquery', 'jquery/ui', 'bannerslider'],function($){
+require(['jquery', 'jquery/ui', 'owlcarousel'],function($){
     $(window).load(function() {
 		var owl = $('.owl-carousel');
 		owl.owlCarousel({
@@ -6,7 +6,7 @@ require(['jquery', 'jquery/ui', 'bannerslider'],function($){
 			loop: true,
 			margin: 0,
 			autoplay: true,
-			autoplayTimeout: 3000,
+			autoplayTimeout: 4000,
 			autoplayHoverPause: false
 		});
     });

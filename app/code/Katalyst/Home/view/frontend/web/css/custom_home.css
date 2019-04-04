@@ -22,6 +22,15 @@
 	}
 
 	.logo {
-		margin: -20px auto 0px 0 !important;
+		margin: -15px auto 0px 0 !important;
+	}
+
+	.navigation ul {
+	    margin-top: -70px !important;
+	    padding: 10px 110px 10px !important;
+	}
+
+	.minicart-wrapper {
+		z-index: 999 !important; 
 	}
 }

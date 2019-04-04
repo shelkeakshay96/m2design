@@ -1,10 +1,15 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../vendor/magento/framework/Module/etc/module.xsd">
   	<head>
-	    <!-- <css src="Katalyst_Home::css/custom_home.css" /> -->
+	    <css src="Katalyst_Home::css/custom_home.css" />
 	    <css src="Katalyst_Home::css/owl.carousel.css" />
 	    <css src="Katalyst_Home::css/owl.theme.default.css" />
 
-	    <script src="Katalyst_Home::js/main.js"/>
+	    <script src="Katalyst_Home::js/slider.js"/>
   	</head>
+  	<body>
+  		<referenceContainer name="content">
+  			<block class="Magento\Framework\View\Element\Template" name="custom.slider.demo" template="Katalyst_Home::slider.phtml"/>
+  		</referenceContainer>
+  	</body>
 </page>

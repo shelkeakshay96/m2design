@@ -1,0 +1,34 @@
+<div class="owl-carousel owl-theme" >
+	<div class="item"><img src="http://192.168.2.104/m2design/pub/media/got.jpg"  alt="1" ></div>
+	<div class="item"><img src="http://192.168.2.104/m2design/pub/media/got2.jpg" alt="2" ></div>
+	<div class="item"><img src="http://192.168.2.104/m2design/pub/media/got3.jpg" alt="3" ></div>
+</div>
+
+<script type="text/javascript">
+// require(['jquery', 'jquery/ui', 'owlcarousel'],function($){
+//     $(window).load(function() {
+// 		var owl = $('.owl-carousel');
+// 		owl.owlCarousel({
+// 			items: 1,
+// 			loop: true,
+// 			margin: 0,
+// 			autoplay: true,
+// 			autoplayTimeout: 3000,
+// 			autoplayHoverPause: false
+// 		});
+//     });
+// });
+
+require(['jquery', 'jquery/ui', 'domReady!', 'owlcarousel'], function($, owl) {
+	$(document).ready(function() {
+		$('.owl-carousel').owlCarousel({
+			items: 1,
+			loop: true,
+			margin: 0,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true
+		});
+	})
+});
+</script>
